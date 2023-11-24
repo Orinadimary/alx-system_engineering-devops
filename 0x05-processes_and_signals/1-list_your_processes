@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this script displays current running process
+#must show all purpose for all users including those that might have tty
+#displays a user oriented format
+
+ps -a -x -u -f

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#the script extends previous exercise and command display bash script 
+
+
+./1-list_your_processes | grep "bash"
