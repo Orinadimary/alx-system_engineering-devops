@@ -7,5 +7,5 @@ while [ $count -gt 0 ]; do
         ((count--))
 	if [ $count -eq 1 ]; then
 		echo "Hi"
-	if
+	fi
 done 
