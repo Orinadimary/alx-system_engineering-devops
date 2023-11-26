@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-#this script displays a statement infidelity while true; do
-echo "to infidelity and end"
-      sleep 2
+#this script displays a statement infidelity while true; done
+infinite=1
+while [ $infinite ]; do
+	echo 'To infinity and beyond'
+	sleep 2
 done
