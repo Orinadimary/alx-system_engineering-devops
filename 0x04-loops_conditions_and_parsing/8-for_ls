@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-# This script display content of the current directory
+# This script displays the content of the current directory
+# Only the part of the name after the first dash is displayed
 
 list=$(ls)
 for i in $list; do
-	echo "$i | cut -d '-' -f2
+    if [[ $i != .* ]]; then  # Check if the file is not hidden
+        echo "$(echo "$i" | cut -d '-' -f2)"
+    fi
 done
