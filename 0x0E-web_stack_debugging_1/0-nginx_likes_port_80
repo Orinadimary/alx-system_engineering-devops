@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A bash script for nginx server to listen at port 80
+
+# remove the default file 
+sudo rm /etc/nginx/sites-enabled/default
+
+# create a symbolic link
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# Restart Nginx
+sudo service nginx restart
